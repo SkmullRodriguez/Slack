@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b96786b0ab654f06a8c744fb1ee09edc" Name="Diagram1">
+        <EntityTypeShape EntityType="sl_baseModel.Categoria" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="sl_baseModel.Departamento" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="sl_baseModel.Etiqueta" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sl_baseModel.Municipio" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sl_baseModel.SubCategoria" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sl_baseModel.Usuario" Width="1.5" PointX="5.125" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="sl_baseModel.FK__SubCatego__IdCat__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="sl_baseModel.FK__Municipio__Depar__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="sl_baseModel.FK__Usuario__IdMunic__2F10007B" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
