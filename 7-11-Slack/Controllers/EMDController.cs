@@ -29,7 +29,7 @@ namespace _7_11_Slack.Controllers
         {
             return View();
         }
-        public ActionResult Inudaciones()
+        public ActionResult Huracanes()
         {
             return View();
         }

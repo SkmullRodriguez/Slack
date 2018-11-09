@@ -117,6 +117,7 @@
     <Content Include="Content\Img\img2.jpg" />
     <Content Include="Content\Img\img3.jpg" />
     <Content Include="Content\Img\img4.jpg" />
+    <Content Include="Content\Metereologico.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Models\Desastre.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -288,6 +289,7 @@
     <Content Include="Views\EMD\Hidrologicos.cshtml" />
     <Content Include="Views\EMD\Index.cshtml" />
     <Content Include="Views\EMD\Metereologicos.cshtml" />
+    <Content Include="Views\EMD\Huracanes.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
