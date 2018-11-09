@@ -104,6 +104,12 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Img\banner1.jpg" />
+    <Content Include="Content\Img\banner2.jpg" />
+    <Content Include="Content\Img\img1.jpg" />
+    <Content Include="Content\Img\img2.jpg" />
+    <Content Include="Content\Img\img3.jpg" />
+    <Content Include="Content\Img\img4.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Models\Desastre.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
