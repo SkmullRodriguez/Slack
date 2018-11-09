@@ -197,6 +197,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\DepartamentoesController.cs" />
+    <Compile Include="Controllers\EMDController.cs" />
     <Compile Include="Controllers\EtiquetasController.cs" />
     <Compile Include="Controllers\MunicipiosController.cs" />
     <Compile Include="Controllers\SubCategoriasController.cs" />
@@ -268,6 +269,11 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\Vista.cshtml" />
     <Content Include="Views\Home\Inicio.cshtml" />
+    <Content Include="Views\EMD\Biologicos.cshtml" />
+    <Content Include="Views\EMD\Geologicos.cshtml" />
+    <Content Include="Views\EMD\Hidrologicos.cshtml" />
+    <Content Include="Views\EMD\Index.cshtml" />
+    <Content Include="Views\EMD\Metereologicos.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

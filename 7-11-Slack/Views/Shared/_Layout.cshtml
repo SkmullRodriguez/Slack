@@ -15,17 +15,32 @@
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("EMD", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav-item"></ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        @Html.ActionLink("Biologicos", "Biologicos", "EMD", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Geologicos", "Geologicos", "EMD", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Hidrologicos", "Hidrologicos", "EMD", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Metereologicos", "Metereologicos", "EMD", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="body-content">
-        @RenderBody()
+        <br />
 
+        @RenderBody()
     </div>
     <hr />
     <footer>
