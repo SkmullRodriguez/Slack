@@ -32,5 +32,13 @@ namespace _7_11_Slack.Controllers
 
             return View();
         }
+         public ActionResult Inicio()
+        {
+            return View();
+        }
+        public ActionResult Vista()
+        {
+            return View();
+        }
     }
 }

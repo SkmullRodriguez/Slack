@@ -5,8 +5,8 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -16,3 +16,48 @@ textarea {
     max-width: 280px;
 }
 
+.body-content {
+    padding-top: 0rem;
+    padding-bottom: 0;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    height: 5rem;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-family: 'Franklin Gothic';
+}
+
+section {
+    height: 25rem;
+}
+
+    section a .btn {
+        border-radius: initial;
+    }
+
+#banner {
+    background-image: url('Img/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+}
+
+#learn {
+    height: 30rem;
+}
+
+#forum {
+    background-image: url('Img/banner2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    height: 25rem;
+}
