@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sl_baseModelStoreContainer" CdmEntityContainer="sl_baseEntities">
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="sl_baseModel.Categoria">
+        <MappingFragment StoreEntitySet="Categoria">
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departamentoes">
+      <EntityTypeMapping TypeName="sl_baseModel.Departamento">
+        <MappingFragment StoreEntitySet="Departamento">
+          <ScalarProperty Name="IdDepartamento" ColumnName="IdDepartamento" />
+          <ScalarProperty Name="Departamento1" ColumnName="Departamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Etiquetas">
+      <EntityTypeMapping TypeName="sl_baseModel.Etiqueta">
+        <MappingFragment StoreEntitySet="Etiquetas">
+          <ScalarProperty Name="IdEtiqueta" ColumnName="IdEtiqueta" />
+          <ScalarProperty Name="NombreEtiqueta" ColumnName="NombreEtiqueta" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Municipios">
+      <EntityTypeMapping TypeName="sl_baseModel.Municipio">
+        <MappingFragment StoreEntitySet="Municipio">
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Municipio1" ColumnName="Municipio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCategorias">
+      <EntityTypeMapping TypeName="sl_baseModel.SubCategoria">
+        <MappingFragment StoreEntitySet="SubCategoria">
+          <ScalarProperty Name="IdSubCategoria" ColumnName="IdSubCategoria" />
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="NombreSubCategoria" ColumnName="NombreSubCategoria" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="sl_baseModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

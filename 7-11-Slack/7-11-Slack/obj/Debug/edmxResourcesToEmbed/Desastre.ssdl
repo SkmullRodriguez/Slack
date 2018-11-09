@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sl_baseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreCategoria" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Departamento">
+    <Key>
+      <PropertyRef Name="IdDepartamento" />
+    </Key>
+    <Property Name="IdDepartamento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Departamento" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Etiquetas">
+    <Key>
+      <PropertyRef Name="IdEtiqueta" />
+    </Key>
+    <Property Name="IdEtiqueta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreEtiqueta" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Municipio">
+    <Key>
+      <PropertyRef Name="IdMunicipio" />
+    </Key>
+    <Property Name="IdMunicipio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Departamento" Type="int" />
+    <Property Name="Municipio" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubCategoria">
+    <Key>
+      <PropertyRef Name="IdSubCategoria" />
+    </Key>
+    <Property Name="IdSubCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCategoria" Type="int" />
+    <Property Name="NombreSubCategoria" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="clave" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IdMunicipio" Type="int" />
+  </EntityType>
+  <Association Name="FK__Municipio__Depar__25869641">
+    <End Role="Departamento" Type="Self.Departamento" Multiplicity="0..1" />
+    <End Role="Municipio" Type="Self.Municipio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="IdDepartamento" />
+      </Principal>
+      <Dependent Role="Municipio">
+        <PropertyRef Name="Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SubCatego__IdCat__2E1BDC42">
+    <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+    <End Role="SubCategoria" Type="Self.SubCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="SubCategoria">
+        <PropertyRef Name="IdCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sl_baseModelStoreContainer">
+    <EntitySet Name="Categoria" EntityType="Self.Categoria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Departamento" EntityType="Self.Departamento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Etiquetas" EntityType="Self.Etiquetas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Municipio" EntityType="Self.Municipio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubCategoria" EntityType="Self.SubCategoria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Municipio__Depar__25869641" Association="Self.FK__Municipio__Depar__25869641">
+      <End Role="Departamento" EntitySet="Departamento" />
+      <End Role="Municipio" EntitySet="Municipio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SubCatego__IdCat__2E1BDC42" Association="Self.FK__SubCatego__IdCat__2E1BDC42">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="SubCategoria" EntitySet="SubCategoria" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
