@@ -15,7 +15,7 @@
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                @Html.ActionLink("EMD", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("EMD", "Inicio", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -39,12 +39,12 @@
 
     <div class="body-content">
         <br />
-
         @RenderBody()
+
     </div>
     <hr />
     <footer>
-        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <p>EMD &copy; @DateTime.Now.Year  - Educación en Medidas para Desastres</p>
     </footer>
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>

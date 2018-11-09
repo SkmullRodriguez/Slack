@@ -104,6 +104,13 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Categoria1.css" />
+    <Content Include="Content\fonts\anyoldicon\anyoldicon.dev.svg" />
+    <Content Include="Content\fonts\anyoldicon\anyoldicon.svg" />
+    <Content Include="Content\fonts\anyoldicon\license.txt" />
+    <Content Include="Content\fonts\anyoldicon\Read Me.txt" />
+    <Content Include="Content\fonts\bpicons\bpicons.svg" />
+    <Content Include="Content\fonts\bpicons\license.txt" />
     <Content Include="Content\Img\banner1.jpg" />
     <Content Include="Content\Img\banner2.jpg" />
     <Content Include="Content\Img\img1.jpg" />
@@ -144,6 +151,13 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\fonts\.DS_Store" />
+    <Content Include="Content\fonts\anyoldicon\anyoldicon.eot" />
+    <Content Include="Content\fonts\anyoldicon\anyoldicon.ttf" />
+    <Content Include="Content\fonts\anyoldicon\anyoldicon.woff" />
+    <Content Include="Content\fonts\bpicons\bpicons.eot" />
+    <Content Include="Content\fonts\bpicons\bpicons.ttf" />
+    <Content Include="Content\fonts\bpicons\bpicons.woff" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />

@@ -21,11 +21,11 @@ namespace _7_11_Slack.Controllers
         {
             return View();
         }
-        public ActionResult Metereologicos()
+        public ActionResult Geologicos()
         {
             return View();
         }
-        public ActionResult Geologicos()
+        public ActionResult Metereologicos()
         {
             return View();
         }

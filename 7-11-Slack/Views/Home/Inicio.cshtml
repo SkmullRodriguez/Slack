@@ -1,12 +1,10 @@
 ﻿@{
-                /**/
-
-                ViewBag.Title = "Inicio";
+    ViewBag.Title = "Inicio";
 }
 <section class="bg-white d-flex justify-content-center" id="banner">
     <div class="align-self-center">
-        <h1>asda</h1>
-        <a href="#" class="btn btn-outline-light text-light">Comenzar</a>
+        <h1>Educación en Medidas para Desastres</h1><br />
+        @Html.ActionLink("COMENZAR", "Index", "Home", new { area = "" }, new { @class = "btn btn-outline-light btn-block" })
     </div>
 </section>
 <section class="bg-white" id="learn">
@@ -59,9 +57,13 @@
 
 
 </section>
-<section class="bg-danger" id="forum">
-    <h1>asdasda</h1>
-    <a href="#" class="btn btn-outline-secondary">content</a>
+<section class="row bg-danger" id="forum">
+    <div class="col-sm-3 float-right pl-5">
+        <h1>Pon a prueba</h1>
+        <p>Tus conocimientos sobre lo aprendido</p>
+        <a href="#" class="btn btn-outline-secondary">Ir a los test</a>
+    </div>
+
 </section>
 
 <section class="bg-light" id="test"></section>
